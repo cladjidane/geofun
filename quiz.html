@@ -1,0 +1,134 @@
+<!--
+  Fab 2015
+-->
+
+<link rel="import" href="bower_components/paper-item/paper-item.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
+<link rel="import" href="bower_components/core-icons/social-icons.html">
+<link rel="import" href="bower_components/core-icons/notification-icons.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/paper-fab/paper-fab.html">
+
+<link rel="import" href="select-one.html">
+<link rel="import" href="quiz-four-quarter.html">
+
+<polymer-element name="page-quiz" attributes="quiz wide" vertical layout>
+  <template>
+    <div class=""></div>
+
+      <paper-button on-tap="{{toggleDialog}}" raised="" class="colored" role="button" tabindex="0">Enigme</paper-button>
+
+      <paper-dialog id="dialog" class="{{ {wide: wide} | tokenList }}" backdrop class="size-position" transition="core-transition-center">            
+        <div class="card" vertical layout>
+        
+          <core-toolbar>
+
+            <span flex>{{quiz.question}}</span>
+            <core-icon-button icon="{{icon}}"></core-icon-button>
+            
+          </core-toolbar>
+          
+          <div>
+
+            <core-selector id="quizViews" notap selected="{{quiz.type}}" cross-fade-delayed on-quiz-answered="{{quizAnswered}}" on-quiz-next="{{quizDone}}">
+          
+              <quiz-single-select name="one-select"></quiz-single-select>
+              <quiz-four-quarter name="four-quarter"></quiz-four-quarter>
+              
+            </core-selector>  
+          </div>
+          
+        </div>
+      </paper-dialog>
+
+    </div>
+  </template>
+<script>
+
+  Polymer('page-quiz', {
+    
+    wide: false,
+    answered: false,
+    icon: 'create',
+    avatar: 1,
+    
+    observe: {
+      'category': 'update'
+    },
+
+    created: function() {
+      this.category = {};
+      this.scores = [];
+    },
+    
+    resetScrollTop: function() {
+      this.$.quizzesPanel.scrollTop = 0;
+      this.$.quizzesContent.scrollTop = 0;
+    },
+
+    toggleDialog: function(e) {
+      d = e.target.nextElementSibling;
+      d.toggle();
+    },
+
+    next: function() {
+      this.index++;
+      this.answered = false;
+      this.icon = 'create';
+      if (this.quizView) {
+       this.quizView.reset();
+      }
+    },
+
+    update: function() {
+      if (this.scores && this.category) {
+        this.index = this.scores.length;
+        this.indexChanged();
+      }
+    },
+    
+    indexChanged: function() {
+      if (this.category.quizzes) {
+        this.quiz = this.category.quizzes[this.index];
+      }
+    },
+    
+    quizChanged: function() {
+      if (this.quizView) {
+        this.quizView.reset();
+      }
+      if (this.quiz) {
+        this.quizView = this.$.quizViews.querySelector(
+            '[name="' + this.quiz.type + '"]');
+        if (this.quizView) {
+          this.quizView.quiz = this.quiz;
+        }
+      }
+    },
+    
+    quizDone: function() {
+      var r = this.quizView.isCorrect();
+      if(r) {        
+        this.icon = 'social:mood';
+        this.async(function() {
+          this.$.dialog.toggle();
+          this.next();
+          this.fire('quiz-done');
+        }, null, 600);
+      } else {
+        this.icon = 'notification:dnd-forwardslash';
+      }
+
+    },
+    
+    quizAnswered: function() {
+      this.answered = true;
+      this.quizDone();
+    }   
+    
+  });
+
+</script>
+</polymer-element>

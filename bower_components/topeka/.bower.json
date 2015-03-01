@@ -1,0 +1,29 @@
+{
+  "name": "topeka",
+  "version": "0.5.0",
+  "homepage": "https://github.com/Polymer/topeka",
+  "authors": [],
+  "description": "",
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "topeka-elements": "Polymer/topeka-elements#^0.5.0"
+  },
+  "_release": "0.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.0",
+    "commit": "b61fac81a54d7e46017e33a20c333ce3dd3dbcd1"
+  },
+  "_source": "git://github.com/Polymer/topeka.git",
+  "_target": "~0.5.0",
+  "_originalSource": "Polymer/topeka",
+  "_direct": true
+}

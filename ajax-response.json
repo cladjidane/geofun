@@ -1,0 +1,64 @@
+[
+  {
+    "uid"     : 0,
+    "title"   : "A la découverte de Lesneven",
+    "text"    : "Partons à la découverte de cette commune qui accuse déjà un peu plus de 1000 ans !",
+    "hash"    : "etape-O",
+    "next"    : true,
+    "quiz"  : {
+      "question"  : "Le glycine est une des plus longues d’Europe, combien mesure t-elle ?",
+      "type"      : "four-quarter",
+      "reponses"      : [
+        "+ de 10m" , 
+        "+ de 100m" , 
+        "+ de 1000m" 
+      ],
+      "answer" : "1"     
+    }
+  },
+  {
+    "uid"     : 1,
+    "title"   : "Place du général du Flo",
+    "text"    : "Cette place centrale de Lesneven ou se trouve une statue du général Adolphe Le Flô, œuvre de Cyprian Godebski",
+    "hash"    : "etape-1",
+    "next"    : true,
+    "prev"    : true,
+    "quiz"  : {
+      "question"  : "En quelle année à eu lieu la prise de Constantine. Observe bien la statue pour trouver la réponse",
+      "type"      : "text",
+      "answer" : "1987" 
+    }
+  },
+  {
+    "uid": 2,
+    "title" : "Anciennes maisons",
+    "text" : "Vieilles maisons du centre ville, du xve au xviiie siècle, dont une à façade à colombages, place général Le Flô, qui est la plus ancienne de la ville. Une autre maison à pans coupés est située rue de la Duchesse-Anne, laquelle y aurait séjourné en 1506 lors de l'une de ses nombreuses visites à Notre-Dame du Folgoët. Une porte cochère monumentale subsiste rue Notre-Dame, près de l'endroit où se trouvait une auberge réputée Le Pélican blanc.",
+    "hash" : "etape-2",
+    "next"    : true,
+    "prev"    : true,
+    "quiz"  : {
+      "question"  : "Quel est le nom de la Chapelle qui se trouve juste à côté de la mairie place du Chateau.",
+      "type"      : "one-select",
+      "reponses"      : [
+        "Saint Joseph", 
+        "Saint Christophe",
+        "Saint François"
+      ],
+      "answer" : "1"    
+    }
+  },
+  {
+    "uid": 3,
+    "title" : "L’Église Saint-Michel",
+    "text" : "Église Saint-Michel, du xviiie siècle, ayant conservé un porche antérieur de style Renaissance. À l'intérieur : statues, orgues classées, tableau Nativité du Frère Luc. En 2013, à l'occasion de travaux de restauration du clocher, le dôme en charpente qui coiffait autrefois la tour a été reconstruit.",
+    "hash" : "etape-3",
+    "next"    : true,
+    "prev"    : true
+  },
+  {
+    "uid": 4,
+    "title" : "Fin!",
+    "text" : "Si notre jeu se termine ici, la découverte de Lesneven continue, car il y a encore pleins de choses à voir. En attendant, si tu as bien résolue toutes les énigmes, tu peux te rendre à l’office de tourisme et vérifier que tu as tout bon ! Un petit cadeau t’attends !",
+    "hash" : "etape-4"
+  }
+]

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>Single page app using Polymer</title>
+  
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>  
+
+  <link rel="import" href="page-service.html">
+  
+  <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+  <link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
+  <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
+  <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+  <link rel="import" href="bower_components/core-icon/core-icon.html">  
+  <link rel="import" href="bower_components/core-collapse/core-collapse.html">
+  <link rel="import" href="bower_components/core-dropdown/core-dropdown.html">
+  <link rel="import" href="bower_components/core-menu-button/core-menu-button.html">
+  <link rel="import" href="bower_components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link rel="import" href="bower_components/core-menu/core-menu.html">
+  <link rel="import" href="bower_components/flatiron-director/flatiron-director.html">
+  <link rel="import" href="bower_components/font-roboto/roboto.html">
+  <link rel="import" href="bower_components/core-a11y-keys/core-a11y-keys.html">
+  <link rel="import" href="bower_components/core-ajax/core-ajax.html">
+  <link rel="import" href="bower_components/core-label/core-label.html">
+
+
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
+
+  <link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+  <link rel="import" href="bower_components/paper-dialog/paper-action-dialog.html">
+
+  <link rel="stylesheet" href="styles.css" shim-shadowdom>
+</head>
+<body unresolved fullbleed>
+
+<template is="auto-binding" id="t">
+
+  <!-- Route controller. -->
+  <flatiron-director route="{{route}}" autoHash></flatiron-director>
+
+  <!-- Keyboard nav controller. -->
+  <core-a11y-keys id="keys" target="{{parentElement}}"
+                  keys="up down left right space space+shift"
+                  on-keys-pressed="{{keyHandler}}"></core-a11y-keys>
+
+
+  <page-service id="service" pages="{{pages}}"></page-service>
+
+  <core-toolbar>
+      <nav>
+        <core-menu-button>
+          <core-icon-button icon="menu"></core-icon-button>
+          <core-dropdown class="dropdown">
+            <core-menu valueattr="hash" selected="{{route}}" on-core-select="{{menuItemSelected}}">
+              <template repeat="{{page, i in pages}}">
+                <paper-item hash="{{page.hash}}">
+                  <core-icon icon="label{{route != page.hash ? '-outline' : ''}}"></core-icon>
+                  <a href="#{{page.hash}}">{{page.title}}</a>
+                </paper-item>
+              </template>
+            </core-menu>
+          </core-dropdown>
+        </core-menu-button>
+      </nav>
+  </core-toolbar>
+
+  <div id="content" layout horizontal center-center fit>
+    <core-animated-pages selected="{{route}}" id="pages" valueattr="hash"
+       transitions="slide-from-right"
+    >
+      <template repeat="{{page, i in pages}}">
+        <section hash="{{page.hash}}" layout vertical center-center>
+          <h2>{{page.title}}</h2>
+          <div class="content-text">{{page.text}}</div>
+
+          <template bind if="{{ page.next }}">
+            <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
+          </template>
+          
+          <template bind if="{{ page.prev }}">
+            <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{prevStep}}">Etape précédente</paper-button>
+          </template>
+
+          <template bind if="{{ page.enigme }}">
+            <paper-button on-tap="{{toggleDialog}}" raised="" class="colored" role="button" tabindex="0">Enigme {{i}}</paper-button>
+            <paper-dialog backdrop id="enigme1" heading="Question" class="size-position">            
+              <div>
+                <p>{{ page.enigme.question }}</p>
+                <h3>Réponse</h3>
+                <form action="">
+
+                <!-- Radio -->
+                <template bind if="{{page.enigme.radio}}">
+                  <p>
+                    <paper-radio-group selected="{{reponse}}" valueattr="label" id="radio-{{page.uid}}">
+                      <template repeat="{{list, i in page.enigme.reponses}}">
+                        <paper-radio-button name="reponse" label="{{list.reponse}}"></paper-radio-button>
+                      </template>
+                    </paper-radio-group>
+                  </p>
+                  <p>
+                    <paper-button class="colored custom" data-value="{{reponse}}" data-uid="{{page.uid}}" on-click="{{validate}}">
+                      <core-icon icon="check"></core-icon>
+                      Valider
+                    </paper-button>
+                  </p> 
+                </template>     
+
+                <!-- Text -->
+                <template bind if="{{page.enigme.text}}">
+                  <p>
+                    <paper-input-decorator label="with core-input">
+                      <input is="core-input" id="text-{{page.uid}}">
+                    </paper-input-decorator>
+                  </p>
+                  <p>
+                    <paper-button class="colored custom" data-uid="{{page.uid}}" on-click="{{validate}}">
+                      <core-icon icon="check"></core-icon>
+                      Valider
+                    </paper-button>
+                  </p> 
+                </template>  
+                      
+                </form>
+              </div>
+            </paper-dialog>
+          </template>
+
+        </section>
+      </template>
+    </core-animated-pages>
+  </div>
+
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>
