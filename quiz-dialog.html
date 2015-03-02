@@ -14,49 +14,37 @@
 <link rel="import" href="select-one.html">
 <link rel="import" href="quiz-four-quarter.html">
 
-<polymer-element name="page-quiz" attributes="quiz wide" vertical layout>
+<polymer-element name="quiz-dialog" attributes="quiz wide" vertical layout>
   <template>
-    <div class=""></div>
 
-      <paper-button on-tap="{{toggleDialog}}" raised="" class="colored" role="button" tabindex="0">Enigme</paper-button>
+    <link rel="stylesheet" href="quiz.css">
 
-      <paper-dialog id="dialog" class="{{ {wide: wide} | tokenList }}" backdrop class="size-position" transition="core-transition-center">            
-        <div class="card" vertical layout>
-        
-          <!--<core-toolbar>
+	<div class="card {{ {answered: answered} | tokenList }}" vertical layout>
 
-            <div class="question theme-bg" flex cross-fade-delayed>{{quiz.question}}</div>
-            <core-icon-button icon="{{icon}}"></core-icon-button>
-            
-          </core-toolbar>-->
+		<core-toolbar class="tall">
+		  <div class="middle">{{quiz.question}}</div>
+		</core-toolbar>
 
-          <core-toolbar class="tall">
-            <div class="middle indent">{{quiz.question}}</div>
-            <core-icon-button icon="{{icon}}"></core-icon-button>
-          </core-toolbar>
-          
-          <div>
+		<core-selector id="quizViews" notap selected="{{quiz.type}}" cross-fade-delayed on-quiz-answered="{{quizAnswered}}" on-quiz-next="{{quizDone}}">
 
-            <core-selector id="quizViews" notap selected="{{quiz.type}}" cross-fade-delayed on-quiz-answered="{{quizAnswered}}" on-quiz-next="{{quizDone}}">
-          
-              <quiz-single-select name="one-select"></quiz-single-select>
-              <quiz-four-quarter name="four-quarter"></quiz-four-quarter>
-              
-            </core-selector>  
-          </div>
-          
-        </div>
-      </paper-dialog>
+		  <quiz-single-select name="one-select"></quiz-single-select>
+		  <quiz-four-quarter name="four-quarter"></quiz-four-quarter>
+		  
+		</core-selector> 
 
-    </div>
+		<paper-fab class="check-button {{iscorrect}}" icon="{{icon}}"></paper-fab>
+
+	</div>
+
   </template>
-<script>
+  <script>
 
-  Polymer('page-quiz', {
+  Polymer('quiz-dialog', {
     
     wide: false,
     answered: false,
     icon: 'none',
+    iscorrect: 'none',
     avatar: 1,
     
     observe: {
@@ -71,12 +59,7 @@
     resetScrollTop: function() {
       this.$.quizzesPanel.scrollTop = 0;
       this.$.quizzesContent.scrollTop = 0;
-    },
-
-    toggleDialog: function(e) {
-      d = e.target.nextElementSibling;
-      d.toggle();
-    },
+	},
 
     next: function() {
       this.index++;
@@ -117,12 +100,13 @@
       var r = this.quizView.isCorrect();
       if(r) {        
         this.icon = 'social:mood';
+      	this.iscorrect = 'correct';
         this.async(function() {
-          this.$.dialog.toggle();
-          this.next();
-          this.fire('quiz-done');
-        }, null, 600);
+          this.fire('next-page');
+      		this.next();
+        }, null, 800);
       } else {
+      	this.iscorrect = 'incorrect';
         this.icon = 'notification:dnd-forwardslash';
       }
 
