@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  var DEFAULT_ROUTE = 'one',  
+  var DEFAULT_ROUTE = '0',  
     d;
   var template = document.querySelector('#t');
 
