@@ -36,12 +36,6 @@
     e.shiftKey ? sender.selectPrevious(true) : sender.selectNext(true);
   };
 
-  template.menuItemSelected = function(e, detail, sender) {
-    if (detail.isSelected) {
-      document.querySelector('#scaffold').closeDrawer();
-    }
-  };
-
   template.ploutch = function(e, detail) {
     console.log('Ploutch !');
   };
