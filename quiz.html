@@ -23,11 +23,16 @@
       <paper-dialog id="dialog" class="{{ {wide: wide} | tokenList }}" backdrop class="size-position" transition="core-transition-center">            
         <div class="card" vertical layout>
         
-          <core-toolbar>
+          <!--<core-toolbar>
 
-            <span flex>{{quiz.question}}</span>
+            <div class="question theme-bg" flex cross-fade-delayed>{{quiz.question}}</div>
             <core-icon-button icon="{{icon}}"></core-icon-button>
             
+          </core-toolbar>-->
+
+          <core-toolbar class="tall">
+            <div class="middle indent">{{quiz.question}}</div>
+            <core-icon-button icon="{{icon}}"></core-icon-button>
           </core-toolbar>
           
           <div>
@@ -51,7 +56,7 @@
     
     wide: false,
     answered: false,
-    icon: 'create',
+    icon: 'none',
     avatar: 1,
     
     observe: {
@@ -76,7 +81,7 @@
     next: function() {
       this.index++;
       this.answered = false;
-      this.icon = 'create';
+      this.icon = 'none';
       if (this.quizView) {
        this.quizView.reset();
       }

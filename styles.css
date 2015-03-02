@@ -66,10 +66,21 @@ body /deep/ paper-button.colored {
 }
 
 /* ENIGME - QUIZ */
+/*
 body /deep/ .card > core-toolbar {
+  height: 120px;
   font-size: 16px;
   line-height: 26px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.card > core-toolbar::shadow #topBar {
+  height: 120px;
+}
+*/
+
+body /deep/ paper-dialog {
+  width: 80%;
 }
 
 body /deep/ #quizViews {
