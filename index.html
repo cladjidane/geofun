@@ -81,10 +81,6 @@
           <template bind if="{{ page.next }}">
             <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
           </template>
-          
-          <template bind if="{{ page.prev }}">
-            <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{prevStep}}">Etape précédente</paper-button>
-          </template>
 
           <template bind if="{{ page.quiz }}">
             <page-quiz quiz={{page.quiz}} on-quiz-done="{{quizDone}}" wide="{{wide}}"></page-quiz>
