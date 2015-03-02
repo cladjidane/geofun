@@ -78,7 +78,7 @@
           <h2>{{page.title}}</h2>
           <div class="content-text">{{page.text}}</div>
 
-          <template bind if="{{ page.next }}">
+          <template bind if="{{ page.next && !page.quiz}}">
             <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
           </template>
 

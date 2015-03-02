@@ -25,8 +25,13 @@
     "prev"    : true,
     "quiz"  : {
       "question"  : "En quelle année à eu lieu la prise de Constantine. Observe bien la statue pour trouver la réponse",
-      "type"      : "text",
-      "answer" : "1987" 
+      "type"      : "four-quarter",
+      "reponses"      : [
+        "+ de 10m" , 
+        "+ de 100m" , 
+        "+ de 1000m" 
+      ],
+      "answer" : "1" 
     }
   },
   {
