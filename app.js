@@ -24,9 +24,15 @@
     pages.selectPrevious();
 
   };
+
+  template.clickMenu = function(e, detail, sender) {
+    template.$.core_scaffold.togglePanel();
+  };
   
   template.cyclePages = function(e, detail, sender) {
     // Click clicks should navigate and not cycle pages.
+    // 
+    console.log('click');
     if (e.path[0].localName == 'a') {
       return;
     }
@@ -39,6 +45,7 @@
   };
 
   template.quizDone = function(e, detail) {
+    var pages = document.querySelector('#pages');
     pages.selectNext();
     /*this.async(function() {
       this.fire('ploutch');

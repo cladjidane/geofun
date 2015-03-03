@@ -54,26 +54,36 @@
 
   <page-service id="service" pages="{{pages}}"></page-service>
 
-  <core-drawer-panel>
-    <div drawer>
+  <core-scaffold id="core_scaffold">
+  
+    <core-header-panel navigation flex mode="seamed">
+      <core-toolbar style="background-color: #526E9C; color: #fff;" indent>
+      <div flex>Geofun</div>
+        <core-icon-button icon="close" on-tap="{{clickMenu}}" hidden?="{{{wide: wide} | tokenList }}"></core-icon-button>
+      </core-toolbar>
+      
       <core-menu valueattr="hash" selected="{{route}}" on-core-select="{{menuItemSelected}}">
         <paper-item hash="splash">
           <core-icon icon="home"></core-icon>
-          <a href="#splash">Accueil</a>
+          <a href="#splash" on-tap="{{clickMenu}}">Accueil</a>
         </paper-item>
         <template repeat="{{page, i in pages}}">
           <paper-item hash="{{page.hash}}">
             <core-icon icon="image:navigate-next"></core-icon>
-            <a href="#{{page.hash}}">{{page.title}}</a>
+            <a href="#{{page.hash}}" on-tap="{{clickMenu}}">{{page.title}}</a>
           </paper-item>
         </template>
+        <hr />
+        <paper-item hash="aide">
+          <core-icon icon="help"></core-icon>
+          <a href="#aide" on-tap="{{clickMenu}}">Aide</a>
+        </paper-item>
       </core-menu>
-    </div>
+    </core-header-panel>
     
-    <div main>
-      <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
-      
-      <div id="content" layout horizontal center-center fit>
+    <div tool id="header-content"></div>
+    
+    <div id="content" layout horizontal center-center fit>
         <core-animated-pages selected="{{route}}" id="pages" valueattr="hash"
            transitions="slide-from-right"
         >
@@ -96,13 +106,15 @@
 
             </section>
           </template>
+
+          <section name="aide" hash="aide">
+            <h2>Aide</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus necessitatibus recusandae reiciendis vel ipsa placeat atque quibusdam iusto sunt? Commodi earum sunt autem harum est ut dolores doloribus recusandae officia.</p>
+          </section>
         </core-animated-pages>
       </div>
-    </div>
-
-  </core-drawer-panel>
-
-
+  
+  </core-scaffold>
 
   <core-media-query query="min-width: {{responsiveWidth}}" queryMatches="{{wide}}"></core-media-query>
 

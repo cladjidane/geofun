@@ -19,22 +19,22 @@
 
     <link rel="stylesheet" href="quiz.css">
 
-	<div class="card {{ {answered: answered} | tokenList }}" vertical layout>
+  	<div class="card {{ {answered: answered} | tokenList }}" vertical layout>
 
-		<core-toolbar class="tall">
-		  <div class="middle">{{quiz.question}}</div>
-		</core-toolbar>
+  		<core-toolbar class="tall {{iscorrect}}">
+  		  <div class="middle">{{quiz.question}}</div>
+  		</core-toolbar>
 
-		<core-selector id="quizViews" notap selected="{{quiz.type}}" cross-fade-delayed on-quiz-answered="{{quizAnswered}}" on-quiz-next="{{quizDone}}">
+  		<core-selector id="quizViews" notap selected="{{quiz.type}}" cross-fade-delayed on-quiz-answered="{{quizAnswered}}" on-quiz-next="{{quizDone}}">
 
-		  <quiz-single-select name="one-select"></quiz-single-select>
-		  <quiz-four-quarter name="four-quarter"></quiz-four-quarter>
-		  
-		</core-selector> 
+  		  <quiz-single-select name="one-select"></quiz-single-select>
+  		  <quiz-four-quarter name="four-quarter"></quiz-four-quarter>
+  		  
+  		</core-selector> 
 
-		<paper-fab class="check-button {{iscorrect}}" icon="{{icon}}"></paper-fab>
+      <core-icon class="check-button {{iscorrect}}" icon="{{icon}}"></core-icon>
 
-	</div>
+  	</div>
 
   </template>
   <script>
@@ -104,7 +104,7 @@
         this.async(function() {
           this.fire('next-page');
       		this.next();
-        }, null, 800);
+        }, null, 1000);
       } else {
       	this.iscorrect = 'incorrect';
         this.icon = 'notification:dnd-forwardslash';

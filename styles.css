@@ -1,7 +1,19 @@
+html, body {
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 body {
   font-family: 'Oleo Script', cursive;
   color: #0e9e9e;
-  background: #eee;
+  margin: 0;
+  background-color: #eee;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-size: 512px;
+  }
 }
 
 .splash {
@@ -15,6 +27,11 @@ body {
   background-size: 512px;
 }
 
+body /deep/ core-toolbar, #header-content {
+  background-color: transparent;
+  color: #037774;
+}
+
 /* DRAWER */
 [drawer] {
   background: #c9ef5e;
@@ -23,6 +40,10 @@ body {
 core-menu {
   color: white;
   margin: 10px 0 0 0;
+}
+
+core-icon {
+  color:  #037774;;
 }
 
 core-menu > paper-item {
@@ -59,6 +80,8 @@ section {
 h2 {
   font-size: 35px;
   color: #ffcc06;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .content-text {
@@ -97,6 +120,10 @@ body /deep/ paper-dialog {
   width: 80%;
 }
 
+html /deep/ paper-dialog::shadow #scroller {
+  padding: 0;
+}
+
 body /deep/ #quizViews {
   display: block;
 }
@@ -111,6 +138,11 @@ body /deep/ #quizViews > .core-selected {
 
 
 @media all and (max-width: 480px) {
+
+  .splash {
+    background-size: 80%;
+  } 
+
   core-animated-pages {
     width: 100%;
     height: 100%;

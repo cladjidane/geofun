@@ -1,8 +1,7 @@
-paper-fab.check-button {
+core-icon.check-button {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #f5f5f5;
   color: #cdcdcd;
   transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: -webkit-transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 200ms, background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -12,25 +11,38 @@ paper-fab.check-button {
   transform-origin: 50% 50%;
 }
 
-:host([animate]) paper-fab {
+:host([animate]) core-icon {
   visibility: hidden;
 }
 
-.answered paper-fab.check-button {
+:host core-toolbar {
+  background-color: silver !important;
+}
+
+:host core-toolbar.correct {
+  background-color: #00e676 !important;
+}
+
+:host core-toolbar.incorrect {
+  background-color: #ff5252 !important;
+  color: white;
+}
+
+.answered core-icon.check-button {
   -webkit-transform: none;
   transform: none;
+  color: white;
+}
+/*
+.answered core-icon.check-button.correct {
+  color: white;
 }
 
-.answered paper-fab.check-button.correct {
-  background-color: #00e676;
-  color: #fff;
+.answered core-icon.check-button.incorrect {
+  color: #ff5252;
 }
 
-.answered paper-fab.check-button.incorrect {
-  background-color: #ff5252;
-  color: #fff;
-}
-
-.answered paper-fab.check-button {
+.answered core-icon.check-button {
   color: #626262;
 }
+*/
