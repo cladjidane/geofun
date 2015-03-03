@@ -1,8 +1,44 @@
 body {
-  font-family: "RobotoDraft";
-  font-weight: 300;
+  font-family: 'Oleo Script', cursive;
+  color: #0e9e9e;
+  background: #eee;
 }
 
+.splash {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(images/splash.svg);
+}
+
+.splash.wide {
+  background-size: 512px;
+}
+
+/* DRAWER */
+[drawer] {
+  background: #c9ef5e;
+}
+
+core-menu {
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+core-menu > paper-item {
+  transition: all 300ms ease-in-out;
+}
+
+paper-item a {
+  text-decoration: none;
+  color: #037774;
+  margin-left: 5px;
+}
+
+core-menu > paper-item.core-selected {
+}
+
+/* PAGES */
 core-animated-pages {
   width: 85%;
   height: 85%;
@@ -13,35 +49,6 @@ core-animated-pages {
 core-animated-pages > * {
   border-radius: 5px;
   font-size: 14px;
-  background-color: white;
-}
-
-body /deep/ core-toolbar {
-  background-color: #03a9f4;
-  color: #fff;
-}
-
-core-menu {
-  color: #01579b;
-  margin: 10px 0 0 0;
-}
-
-core-menu > paper-item {
-  transition: all 300ms ease-in-out;
-}
-
-paper-item a {
-  text-decoration: none;
-  color: currentcolor;
-  margin-left: 5px;
-}
-
-core-menu > paper-item.core-selected {
-  background: #e1f5fe;
-}
-
-#content {
-  top: 85px;
 }
 
 /* CONTENT */
@@ -49,11 +56,18 @@ section {
   padding: 20px;
 }
 
+h2 {
+  font-size: 35px;
+  color: #ffcc06;
+}
+
 .content-text {
-  background: silver;
+  font-family: 'Basic', sans-serif;
+  color: #5c8e8b;
   padding: 20px;
   margin: 20px;
   width: 100%;
+  font-size: 18px;
 }
 
 /* FORM */
@@ -61,7 +75,7 @@ body /deep/ paper-button {
   margin: 0;
 }
 body /deep/ paper-button.colored {
-  background: #4285f4;
+  background: #b180e8;
   color: #fff;
 }
 

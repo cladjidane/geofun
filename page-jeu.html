@@ -1,0 +1,31 @@
+<!--
+  Fab 2015
+-->
+
+<link rel="import" href="quiz.html">
+
+<polymer-element name="page-jeu" attributes="pages wide route" vertical layout>
+
+	<template repeat="{{page, i in pages}}">
+		<section hash="{{page.hash}}" layout vertical center-center>
+		  <h2>{{page.title}}</h2>
+		  <div class="content-text">{{page.text}}</div>
+
+		  <template bind if="{{ page.next && !page.quiz}}">
+		    <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
+		  </template>
+
+		  <template bind if="{{ page.quiz }}">
+		    <page-quiz quiz={{page.quiz}} on-quiz-done="{{quizDone}}" wide="{{wide}}"></page-quiz>
+		  </template>
+
+		</section>
+	</template>  
+	<script>
+
+    Polymer('page-jeu', {
+      
+    });
+
+  </script>
+</polymer-element>

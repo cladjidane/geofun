@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <title>Geofun --- Fun !</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Basic' rel='stylesheet' type='text/css'>
   
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>  
 
@@ -41,7 +44,7 @@
 
   <link rel="stylesheet" href="styles.css" shim-shadowdom>
 </head>
-<body unresolved fullbleed>
+<body>
 
 <template is="auto-binding" id="t" on-ploutch="{{ploutch}}">
 
@@ -51,45 +54,55 @@
 
   <page-service id="service" pages="{{pages}}"></page-service>
 
-  <core-toolbar>
-      <nav>
-        <core-menu-button>
-          <core-icon-button icon="menu"></core-icon-button>
-          <core-dropdown class="dropdown">
-            <core-menu valueattr="hash" selected="{{route}}" on-core-select="{{menuItemSelected}}">
-              <template repeat="{{page, i in pages}}">
-                <paper-item hash="{{page.hash}}">
-                  <core-icon icon="check"></core-icon>
-                  <a href="#{{page.hash}}">{{page.title}}</a>
-                </paper-item>
+  <core-drawer-panel>
+    <div drawer>
+      <core-menu valueattr="hash" selected="{{route}}" on-core-select="{{menuItemSelected}}">
+        <paper-item hash="splash">
+          <core-icon icon="home"></core-icon>
+          <a href="#splash">Accueil</a>
+        </paper-item>
+        <template repeat="{{page, i in pages}}">
+          <paper-item hash="{{page.hash}}">
+            <core-icon icon="image:navigate-next"></core-icon>
+            <a href="#{{page.hash}}">{{page.title}}</a>
+          </paper-item>
+        </template>
+      </core-menu>
+    </div>
+    
+    <div main>
+      <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+      
+      <div id="content" layout horizontal center-center fit>
+        <core-animated-pages selected="{{route}}" id="pages" valueattr="hash"
+           transitions="slide-from-right"
+        >
+          <div name="splash" hash="splash">
+            <span fit class="splash {{ {wide: wide} | tokenList }}" cross-fade></span>
+          </div>
+
+          <template repeat="{{page, i in pages}}">
+            <section hash="{{page.hash}}" layout vertical center-center>
+              <h2>{{page.title}}</h2>
+              <div class="content-text">{{page.text}}</div>
+
+              <template bind if="{{ page.next && !page.quiz}}">
+                <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
               </template>
-            </core-menu>
-          </core-dropdown>
-        </core-menu-button>
-      </nav>
-  </core-toolbar>
 
-  <div id="content" layout horizontal center-center fit>
-    <core-animated-pages selected="{{route}}" id="pages" valueattr="hash"
-       transitions="slide-from-right"
-    >
-      <template repeat="{{page, i in pages}}" selected="0">
-        <section hash="{{page.hash}}" layout vertical center-center>
-          <h2>{{page.title}}</h2>
-          <div class="content-text">{{page.text}}</div>
+              <template bind if="{{ page.quiz }}">
+                <page-quiz quiz={{page.quiz}} on-quiz-done="{{quizDone}}" wide="{{wide}}"></page-quiz>
+              </template>
 
-          <template bind if="{{ page.next && !page.quiz}}">
-            <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
+            </section>
           </template>
+        </core-animated-pages>
+      </div>
+    </div>
 
-          <template bind if="{{ page.quiz }}">
-            <page-quiz quiz={{page.quiz}} on-quiz-done="{{quizDone}}" wide="{{wide}}"></page-quiz>
-          </template>
+  </core-drawer-panel>
 
-        </section>
-      </template>
-    </core-animated-pages>
-  </div>
+
 
   <core-media-query query="min-width: {{responsiveWidth}}" queryMatches="{{wide}}"></core-media-query>
 

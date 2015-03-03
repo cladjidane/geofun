@@ -1,16 +1,14 @@
 (function() {
   "use strict";
 
-  var DEFAULT_ROUTE = '0',  
+  var DEFAULT_ROUTE = 'splash',  
     d;
   var template = document.querySelector('#t');
 
   template.responsiveWidth = '900px';
   
   template.addEventListener('template-bound', function(e) {
-
-    this.route = this.route || DEFAULT_ROUTE; // Select initial route.
-
+    this.route = this.route || DEFAULT_ROUTE;
   });
   
   template.nextStep = function(e, detail, sender) {

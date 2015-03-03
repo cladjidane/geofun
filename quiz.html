@@ -8,6 +8,7 @@
 <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
 <link rel="import" href="bower_components/core-icons/social-icons.html">
 <link rel="import" href="bower_components/core-icons/notification-icons.html">
+<link rel="import" href="bower_components/core-icons/image-icons.html">
 <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 
@@ -28,17 +29,17 @@
   </template>
   <script>
 
-  Polymer('page-quiz', {
-    toggleDialog: function(e) {
-      d = e.target.nextElementSibling;
-      d.toggle();
-    },
-    nextPage: function(){
-      this.$.dialog.toggle();
-      this.fire('quiz-done');
-    }
-  });
+    Polymer('page-quiz', {
+      toggleDialog: function(e) {
+        d = e.target.nextElementSibling;
+        d.toggle();
+      },
+      nextPage: function(){
+        this.$.dialog.toggle();
+        this.fire('quiz-done');
+      }
+    });
 
-</script>
+  </script>
 
 </polymer-element>
