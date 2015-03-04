@@ -16,6 +16,11 @@ body {
   }
 }
 
+.goto-home {
+  color: white;
+  text-decoration: none;
+}
+
 .splash {
   background-color: #eee;
   background-repeat: no-repeat;
@@ -27,9 +32,9 @@ body {
   background-size: 512px;
 }
 
-body /deep/ core-toolbar, #header-content {
+body /deep/ core-toolbar {
   background-color: transparent;
-  color: #037774;
+  color: #77a09b;
 }
 
 /* DRAWER */
@@ -43,7 +48,7 @@ core-menu {
 }
 
 core-icon {
-  color:  #037774;;
+  color:  #526E9C;
 }
 
 core-menu > paper-item {
@@ -52,7 +57,7 @@ core-menu > paper-item {
 
 paper-item a {
   text-decoration: none;
-  color: #037774;
+  color: #526E9C;
   margin-left: 5px;
 }
 
@@ -79,27 +84,31 @@ section {
 
 h2 {
   font-size: 35px;
-  color: #ffcc06;
+  color: #f45d5d;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .content-text {
   font-family: 'Basic', sans-serif;
-  color: #5c8e8b;
+  color: #526E9C;
   padding: 20px;
   margin: 20px;
   width: 100%;
+  text-align: center;
   font-size: 18px;
 }
 
 /* FORM */
 body /deep/ paper-button {
   margin: 0;
+  padding: 5px 10px;
 }
 body /deep/ paper-button.colored {
-  background: #b180e8;
-  color: #fff;
+  background: #526E9C;
+  color: white;
+  text-transform: none;
+  font-size: 20px;
 }
 
 /* ENIGME - QUIZ */

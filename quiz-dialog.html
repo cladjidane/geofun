@@ -21,8 +21,10 @@
 
   	<div class="card {{ {answered: answered} | tokenList }}" vertical layout>
 
-  		<core-toolbar class="tall {{iscorrect}}">
-  		  <div class="middle">{{quiz.question}}</div>
+  		<core-toolbar class="medium-tall {{iscorrect}}">  		  
+        <span flex></span>      
+        <span flex class="middle">{{quiz.question}}</span>
+        <span flex></span>
   		</core-toolbar>
 
   		<core-selector id="quizViews" notap selected="{{quiz.type}}" cross-fade-delayed on-quiz-answered="{{quizAnswered}}" on-quiz-next="{{quizDone}}">

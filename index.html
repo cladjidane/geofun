@@ -57,8 +57,8 @@
   <core-scaffold id="core_scaffold">
   
     <core-header-panel navigation flex mode="seamed">
-      <core-toolbar style="background-color: #526E9C; color: #fff;" indent>
-      <div flex>Geofun</div>
+      <core-toolbar style="background-color: #65d6d3; color: #fff;" indent>
+      <div flex><a class="goto-home" href="/">Geofun</a></div>
         <core-icon-button icon="close" on-tap="{{clickMenu}}" hidden?="{{{wide: wide} | tokenList }}"></core-icon-button>
       </core-toolbar>
       
@@ -88,7 +88,7 @@
            transitions="slide-from-right"
         >
           <div name="splash" hash="splash">
-            <span fit class="splash {{ {wide: wide} | tokenList }}" cross-fade></span>
+            <a href="#{{'etape-O'}}"><span fit class="splash {{ {wide: wide} | tokenList }}" cross-fade></span></a>
           </div>
 
           <template repeat="{{page, i in pages}}">

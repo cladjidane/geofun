@@ -16,11 +16,19 @@ core-icon.check-button {
 }
 
 :host core-toolbar {
-  background-color: silver !important;
+  background-color: #65d6d3 !important;
+  color: white !important;
+  text-align: center;
 }
+
+:host core-toolbar.medium-tall::shadow #middleBar {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
 
 :host core-toolbar.correct {
   background-color: #00e676 !important;
+  color: white;
 }
 
 :host core-toolbar.incorrect {
