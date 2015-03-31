@@ -1,56 +1,26 @@
 [
   {
     "uid"     : 0,
-    "title"   : "A la découverte de Lesneven",
-    "text"    : "Partons à la découverte de cette commune qui accuse déjà un peu plus de 1000 ans !",
+    "title"   : "GeoFun, présentation",
+    "text"    : "Geofun est une application sur smartphone et tablette qui permet d’enrichir une visite, un parcours d’orientation ou une simple balade grâce à la diffusion d’informations numériques (textes, images, vidéos, audio). ",
     "hash"    : "etape-O",
-    "next"    : true,
-    "quiz"  : {
-      "question"  : "Le glycine est une des plus longues d’Europe, combien mesure t-elle ?",
-      "type"      : "four-quarter",
-      "reponses"      : [
-        "+ de 10m" , 
-        "+ de 100m" , 
-        "+ de 1000m" 
-      ],
-      "answer" : "1"     
-    }
+    "next"    : true
   },
   {
     "uid"     : 1,
-    "title"   : "Place du général du Flo",
-    "text"    : "Cette place centrale de Lesneven ou se trouve une statue du général Adolphe Le Flô, œuvre de Cyprian Godebski",
+    "title"   : "Les usages de l’application Geofun peuvent être nombreux",
+    "text"    : "",
     "hash"    : "etape-1",
     "next"    : true,
-    "prev"    : true,
-    "quiz"  : {
-      "question"  : "En quelle année à eu lieu la prise de Constantine. Observe bien la statue pour trouver la réponse",
-      "type"      : "four-quarter",
-      "reponses"      : [
-        "+ de 10m" , 
-        "+ de 100m" , 
-        "+ de 1000m" 
-      ],
-      "answer" : "1" 
-    }
+    "prev"    : true
   },
   {
     "uid": 2,
-    "title" : "Anciennes maisons",
-    "text" : "Vieilles maisons du centre ville, du xve au xviiie siècle, dont une à façade à colombages, place général Le Flô, qui est la plus ancienne de la ville. Une autre maison à pans coupés est située rue de la Duchesse-Anne, laquelle y aurait séjourné en 1506 lors de l'une de ses nombreuses visites à Notre-Dame du Folgoët. Une porte cochère monumentale subsiste rue Notre-Dame, près de l'endroit où se trouvait une auberge réputée Le Pélican blanc.",
+    "title" : "Dynamiser les informations",
+    "text" : "Geofun, remplace ou complète efficacement les panneaux imprimés (signalétique, points d’information,...) en permettant plusieurs niveaux de lectures ou encore en libérant les informations de leur support physique.",
     "hash" : "etape-2",
     "next"    : true,
-    "prev"    : true,
-    "quiz"  : {
-      "question"  : "Quel est le nom de la Chapelle qui se trouve juste à côté de la mairie place du Chateau.",
-      "type"      : "one-select",
-      "reponses"      : [
-        "Saint Joseph", 
-        "Saint Christophe",
-        "Saint François"
-      ],
-      "answer" : "1"    
-    }
+    "prev"    : true
   },
   {
     "uid": 3,
