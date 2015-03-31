@@ -1,0 +1,656 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inc",
+				"include"
+			],
+			[
+				"pho",
+				"photoboxH"
+			],
+			[
+				"ph",
+				"photoboxH"
+			],
+			[
+				"que",
+				"querySelector"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"nav-",
+				"nav-menu"
+			],
+			[
+				"na",
+				"nav-menu"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"prent",
+				"parentHeight"
+			],
+			[
+				"ver",
+				"verticalOffset"
+			],
+			[
+				"parent",
+				"parentSelector"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"img",
+				"imgProject"
+			],
+			[
+				"im",
+				"imgProject6"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"ani",
+				"animEls"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"scre",
+				"screen--current"
+			],
+			[
+				"scree",
+				"screenbottom"
+			],
+			[
+				"screen",
+				"screenLeft"
+			],
+			[
+				"sc",
+				"screenRight"
+			],
+			[
+				"ste",
+				"step__li-txt"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ajax-response.json",
+			"settings":
+			{
+				"buffer_size": 1708,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"last_filter": "beau",
+		"selected_items":
+		[
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"js",
+				"Javascript Beautify"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/fabien/Sites/labs.koality.fr/geofun"
+	],
+	"file_history":
+	[
+		"/private/etc/apache2/httpd.conf",
+		"/private/etc/apache2/extra/httpd-userdir.conf",
+		"/private/etc/php.ini",
+		"/private/etc/apache2/users/fabien.conf",
+		"/Users/fabien/Sites/wp1/wp-content/themes/jupiter/fonts/stylesheet.css",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/fabien/Sites/phpmyadmin/config.inc.php",
+		"/Users/fabien/Sites/wp1/wp-config.php",
+		"/Users/fabien/Sites/wp1/wp-content/themes/jupiter/fonts/Arsenal-Bold-demo.html",
+		"/Volumes/OBI29/web/templates/obi29/inc-footer.php",
+		"/Volumes/OBI29/web/templates/obi29/sass/content/_article.scss",
+		"/Volumes/OBI29/web/templates/obi29/sass/content/_form.scss",
+		"/Volumes/OBI29/web/templates/obi29/sass/content/_common.scss",
+		"/Volumes/OBI29/web/templates/obi29/inc-header.php",
+		"/Volumes/OBI29/web/templates/obi29-page/index.php",
+		"/Volumes/OBI29/web/.htaccess",
+		"/Volumes/OBI29/web/templates/obi29/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/13E4FE5A-3264-46A2-86D5-A73B16DEACDE/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/196F236C-BF26-4E40-9087-CC7CC1F5FAA0/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/B28EC47A-DB8D-4605-BB9A-EE472B35ECC6/inc-footer.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/FA053AF1-E932-4854-B1DD-855B1757B71E/inc-footer.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/793FBE9B-0CFA-47F1-BF07-1ADB89EB9E65/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/A81EFC35-EF12-469F-B465-C0C58E9FFE4A/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/F2E79BCC-C748-4D0C-AE0A-CA07DD61C06D/helper.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/C5C7E07B-C05C-4D9C-9EE5-45C92F50106E/mod_k_estimation.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/155CC1A2-B3B5-417E-93B3-D76C535E6279/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/AE8E3CBD-3AFD-41A3-B951-679535F3FF1F/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/73AD4823-0F6F-4621-8D90-EACEB2B433F9/default.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/3121EB2D-25C6-4E62-8A61-B072D10B2FAA/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/61EB38CB-1E35-4A0F-94EB-0C5CBBF39685/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/FDB49F0F-4908-4251-B17E-8A21E438B3F2/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/DAA0AEAD-3FD1-4C61-88A9-669159432582/mod_k_estimation.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/0C86DB32-4451-4F48-9679-D4CFE18A30FD/mod_k_estimation.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/2A0EC8E8-1D47-47E0-B4AF-93249CF6E1E3/_header.scss",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/03F1922B-FBF2-4057-AD48-8CB26E226D76/styles.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/66A0BA8E-B0DC-48FB-B800-52751B12DB4A/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/874282A4-B23E-419E-AE01-E533497C810D/default.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/D19E3B00-A9C5-4218-99A9-573243D646B1/helper.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/ED759549-4BBC-4145-9F00-C042FFBBFD51/mod_estimation.xml.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/76FCA4AE-4CC0-4B40-B7CA-0E7CA61F3DB1/mod_search.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/8E04AF8B-3A02-42BC-9B1A-3A369D026BEC/default.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/0211D494-8490-44E4-9EC1-5C5CC42FAF6E/mod_k_estimation.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/30CDF8F0-1F16-4418-BBB3-803939A18D55/mod_k_estimation.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/4C920534-A726-4427-AEF5-2E7CBC96ED99/helper.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5BF887DE-4C77-44B9-8ABD-DDA4E5166A0A/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/75812178-A511-469E-891D-71A7983B83A4/modules.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/3979372D-87DB-4885-8F48-CD71F2CECAED/default.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/794A1915-30DC-40EF-92A8-7AF7F477C694/mod_estimation.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/2220D96A-A33E-4C65-A030-38106A32AD44/default.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/6B0E8BC6-3C3C-452E-A3A2-FD2203694CF9/mod_estimation.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/984DF645-DECC-4287-A829-D110B185587B/mod_estimation.xml.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/4BC1D5FB-9146-4822-BB5F-5982FE24D368/mod_k_estimation.xml.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/F3C64D2B-D4D1-4D9A-AFB9-54BADDF83007/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/84A2A193-BCAF-4F55-A5F2-2B9C62E3FE31/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/B3CAABB8-E15C-41F4-B281-58F269DD06EF/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/1C6190D0-50A1-45B1-8689-8732163530EF/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/CA2AB500-9C14-4CDF-8D96-66B978F9758B/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/6B7A58CE-D2D2-437E-8B67-889654A9F812/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/BDBE6DEA-3D0D-4B0A-8E6D-5CC9D560C39B/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/05DF449F-403B-468A-8D21-F216360370A3/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/FEAFAE9F-658D-4883-9A49-AE42DD3393A0/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/BEF4510F-8236-49A9-A9ED-495B1AC8C83E/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/0A1F174C-7EF7-419C-BC7F-CCD9603B5B41/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/1829AEB2-09A0-4233-8034-7F87891B287A/templateDetails.xml",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/CBF5F7A0-BA0E-48F9-8AF0-315D1F976EA6/templateDetails.xml",
+		"/Users/fabien/_KOALITY/_CLIENTS/_obi29/tmpl_obi29/templateDetails.xml",
+		"/Users/fabien/_KOALITY/_CLIENTS/_obi29/tmpl_obi29/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/8CEBFD2D-B719-469A-BC82-0672773CC616/content-single.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/FCA4D089-1081-4D73-9FE7-280B2AA20EB0/xhr-single.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/C76A22FA-6495-4D5E-97A0-B10989D26A60/header.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/24589241-BBDA-4776-809C-C22F13B8C460/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/9744418D-E6D1-4A1F-9CBD-4396009DA180/page-agence.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/BEE0BDBB-62FC-4A90-8403-4940E6764E73/main.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/03700302-0BC7-420D-AA04-D0C78B2FE972/main.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/7F56316B-AC50-42EA-8EB3-6E6E84EE5BED/settings.js",
+		"/Volumes/La chaumiere/web/robots.txt",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/BA2EDAE1-644E-42D2-89FA-97F85B18F5CE/header.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/90943700-FA76-4CFE-A75F-353CB7C1EAD1/mk_edge_slider.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5AFD83E1-28A1-4C47-BDFA-2C6977C91C38/style.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/30177BEE-F10A-4395-BE9E-26921F3866F7/mk_icon_box.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/D7EBFDC6-B7B7-479E-BA03-EB3296AFED66/page-agence.php",
+		"/Users/fabien/Desktop/script.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/1E837CB9-9B5E-473B-9F1A-66B91C0248F6/content-page.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/A5BA05C1-956D-4D5A-8C81-1579EA05838F/content-single.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/A9A12AE1-AD1D-4A2A-ACF6-55D07BB87872/page.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5429BD21-1D34-4EE0-98EE-DBC6F58B4E5A/settings.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/2EB3E5C6-B894-44D1-BB02-DA099C5A065C/settings.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/A134A4E1-5C8E-4ADD-8EB7-0CD03BD65D83/main.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5681C34D-C5F0-4BA5-81FB-D48A28FC9D4A/bootstrap.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/C7FB6031-9351-484A-91B9-11B090806D30/settings.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5D320861-A497-4CA6-9CB3-850B9FBA34A5/main.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/74073A37-22D4-4C9B-8917-E0F39B21CB39/style.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/48129206-6F4D-4432-95E1-DECC57196F68/style.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/DD67686B-FA76-44E4-AF5C-4C3931D115D6/MyFontsWebfontsKit.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/90FE506E-622D-45BD-8C3F-062D09FB82B0/index.html",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/FA271633-7793-4DC1-9A3A-3229B5295A3C/xhr-single.php",
+		"/Library/LaunchDaemons/com.mysql.mysql.plist",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/E26F8385-EB18-4ECB-81F9-5AF03CF5E2C3/script.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/functions.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/js/main.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/js/plugins.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/sidebar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content-search.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/page.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/footer.php",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content-single.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/sidebar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/single.php",
+		"/Applications/XAMPP/xamppfiles/etc/my.cnf",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content-page.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/comments.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/archive.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-settings.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/D959A2A1-BA70-4D00-8F58-0DA3C69C4E8B/home.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/746416AF-9559-4984-9DFA-88391409C643/mk_portfolio.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/99F82BAC-CED3-429A-83E9-7DCB8BF3E407/single-pages_txt_1_col.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/029976C7-7988-4C15-AB2B-8D48EBCD796C/single.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5D8FB324-A002-4BA1-8CA8-F7B89EB4F4B0/functions.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/2E2D79F1-37F5-4D59-B919-EC0CF5A41C9E/archive.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/D0EACCE0-ED33-4DA3-9648-65C4EA544B41/content.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/7544B4FB-0FC1-4525-90D6-38E367210D9E/content-page.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/82942E79-1F14-43C1-8DD0-B453FF065080/single.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/95498FD8-4C6F-44ED-AB16-65629457EA60/home.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/59B96B3B-043F-4820-A115-2FA1D8605145/.htaccess",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/61B2D470-4C61-4CDC-9760-D7A732944455/home.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/OBI29/web/templates/obi29/sass/content",
+			"",
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"max_input_time",
+			"url",
+			"images",
+			"dev",
+			"//$('.",
+			"set",
+			"height",
+			"90",
+			"font-face",
+			"impa",
+			"Impac",
+			"webfonts/2D8623_0_0",
+			"  ",
+			"</ul>",
+			"<ul>",
+			"<li>",
+			"</li>",
+			"sudo nano /etc/apache2/httpd.conf",
+			"allow",
+			"private/etc/apache2/extra/httpd-userdir.conf",
+			"users/*.conf",
+			"/private/etc/apache2/users/*.conf",
+			"default_socket",
+			"?",
+			"a?",
+			"e?",
+			"mk-filter-portfolio",
+			"portfolio",
+			"mk-filter-portfolio",
+			"All",
+			"portfolio-grid ",
+			"task",
+			"misc",
+			"JSTATE",
+			"text",
+			"scaff",
+			"menuItemSelected",
+			"label",
+			"key",
+			"vulcan",
+			"../../../components/",
+			"\">\n",
+			"fullbleed",
+			"../comp",
+			".js",
+			">\n",
+			"slide",
+			"form",
+			"menu",
+			"categ",
+			"padding",
+			"respo",
+			"#a5a117",
+			"drop",
+			"lesarcades",
+			"dropdown-menu",
+			"drop",
+			"posre",
+			").",
+			");\n",
+			"padding",
+			"80",
+			"social",
+			"slides",
+			"pacific",
+			"font-fac",
+			"font-fa",
+			";\n",
+			"lesarcades",
+			";\n",
+			"navbar",
+			"col-sm",
+			"col",
+			"lesarcades",
+			"logo",
+			"medium",
+			";\n",
+			"inline",
+			");\n",
+			"",
+			"auto",
+			"none",
+			"s",
+			"http://newdomain.com'",
+			"http://olddomain.com"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Impact",
+			" ",
+			"",
+			"à",
+			"é",
+			"../components/",
+			"comp",
+			"gray",
+			"desdoigts",
+			"",
+			"http://www.dynamoplus.fr",
+			"http://dplus.koality.fr/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ajax-response.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								905,
+								905
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "geofun.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

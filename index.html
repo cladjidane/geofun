@@ -10,7 +10,7 @@
   
   <script src="bower_components/webcomponentsjs/webcomponents.js"></script>  
 
-  <link rel="import" href="page-service.html">
+  <link rel="import" href="elements/page-service.html">
   
   <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
   <link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
@@ -97,7 +97,7 @@
               <div class="content-text">{{page.text}}</div>
 
               <template bind if="{{ page.next && !page.quiz}}">
-                <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">Etape suivante</paper-button>
+                <paper-button raised="" class="colored" role="button" tabindex="0" on-click="{{nextStep}}">{{ page.labelbt }}</paper-button>
               </template>
 
               <template bind if="{{ page.quiz }}">

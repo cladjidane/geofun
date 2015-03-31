@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="quiz.css">
 
-    <paper-button on-tap="{{toggleDialog}}" raised="" class="colored" role="button" tabindex="0">Enigme</paper-button>
+    <paper-button on-tap="{{toggleDialog}}" raised="" class="colored" role="button" tabindex="0">{{ quiz.labelbt }}</paper-button>
 
     <paper-dialog id="dialog" class="{{ {wide: wide} | tokenList }}" backdrop class="size-position" transition="core-transition-center">          
       <quiz-dialog quiz={{quiz}} wide="{{wide}}" on-next-page="{{nextPage}}"></quiz-dialog>

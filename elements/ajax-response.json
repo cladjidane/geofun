@@ -1,0 +1,63 @@
+[
+  {
+    "uid"     : 0,
+    "title"   : "GeoFun, présentation",
+    "text"    : "Geofun est une application sur smartphone et tablette qui permet d’enrichir une visite, un parcours d’orientation ou une simple balade grâce à la diffusion d’informations numériques (textes, images, vidéos, audio). ",
+    "hash"    : "etape-O",
+    "next"    : true,
+    "labelbt": "Usages"
+  },
+  {
+    "uid"     : 1,
+    "title"   : "Les usages de l’application Geofun peuvent être nombreux",
+    "text"    : "",
+    "hash"    : "etape-1",
+    "next"    : true,
+    "labelbt": "Panneaux virtuels",
+    "prev"    : true
+  },
+  {
+    "uid": 2,
+    "title" : "Dynamiser les informations",
+    "text" : "Geofun, remplace ou complète efficacement les panneaux imprimés (signalétique, points d’information,...) en permettant plusieurs niveaux de lectures ou encore en libérant les informations de leur support physique.",
+    "hash" : "etape-2",
+    "next"    : true,
+    "labelbt": "A la carte",
+    "prev"    : true
+  },
+  {
+    "uid": 3,
+    "title" : "A la carte",
+    "text" : "Geofun permet la création de parcours orientés. Ces parcours peuvent être enrichi par des mini jeux d’étapes permettant aux participants de progresser dans leur parcours.",
+    "hash" : "etape-3",
+    "next"    : true,
+    "labelbt": "Une experience",
+    "prev"    : true,
+    "quiz"  : {
+      "labelbt": "Exemple de jeu",
+      "question"  : "Qui édite GeoFun ?",
+      "type"      : "four-quarter",
+      "reponses"      : [
+        "Soleil noir" , 
+        "Lunaweb" , 
+        "Koality" 
+      ],
+      "answer" : "2"     
+    }
+  },
+  {
+    "uid": 4,
+    "title" : "En famille ou en groupe",
+    "text" : "Geofun permet de créer des expériences familiales ou de groupes à travers le monde physique et le monde virtuel.",
+    "hash" : "etape-4",
+    "next"    : true,
+    "labelbt": "Conclusion",
+    "prev"    : true
+  },
+  {
+    "uid": 5,
+    "title" : "Comment préparer un parcours Geofun",
+    "text" : "<ul><li>définir le parcours géographique</li><li>définir les étapes clés</li><li>définir les contenus d’informations (texte/images/vidéos/audio)</li><li>définir les interactions (quiz, étape suivante, jeux)</li><li>définir les contenus additionnels (informations légales, coordonnées, aide, ...)</li></ul>",
+    "hash" : "etape-5"
+  }
+]
