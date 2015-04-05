@@ -135,6 +135,8 @@ body /deep/ .card > core-toolbar {
 
 body /deep/ paper-dialog {
   width: 80%;
+  height: 80%;
+  display: block;
 }
 
 html /deep/ paper-dialog::shadow #scroller {

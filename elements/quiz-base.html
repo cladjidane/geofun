@@ -36,6 +36,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         tap: 'answered',
         keypress: 'keyPress'
       },
+
+      ready: function(){
+        //console.log('quiz-base');
+      },
       
       isCorrect: function() {
         return this.value == this.quiz.answer;

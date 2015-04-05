@@ -13,6 +13,7 @@
 
 <link rel="import" href="elements/select-one.html">
 <link rel="import" href="elements/quiz-four-quarter.html">
+<link rel="import" href="elements/game-puzzle.html">
 
 <polymer-element name="quiz-dialog" attributes="quiz wide" vertical layout>
   <template>
@@ -31,6 +32,7 @@
 
   		  <quiz-single-select name="one-select"></quiz-single-select>
   		  <quiz-four-quarter name="four-quarter"></quiz-four-quarter>
+        <game-puzzle name="game-puzzle" id="gamepuzzle"></game-puzzle>
   		  
   		</core-selector> 
 
@@ -53,6 +55,27 @@
       'category': 'update'
     },
 
+    d: '',
+
+    ready: function() {
+      // Ajout d'un gestionnaire d'évenement sur le composant paper-dialog
+      // https://www.polymer-project.org/0.5/docs/elements/paper-dialog.html
+      // Voir dans Events
+      // C'est le meilleur moyen d'obtenir la taille de la box
+      this.d = this.parentNode;
+      var that = this;
+      this.d.addEventListener('core-overlay-open-completed', function(){
+        var h = this.clientHeight;
+        var w = this.clientWidth;
+        this.async(function() {
+          // lancer le puzzle ...
+          that.$.gamepuzzle.h = h;
+          that.$.gamepuzzle.w = w;
+          that.$.gamepuzzle.init();
+        }, null, parseInt(CoreStyle.g.transitions.duration));
+      });
+    },
+
     created: function() {
       this.category = {};
       this.scores = [];
@@ -61,7 +84,7 @@
     resetScrollTop: function() {
       this.$.quizzesPanel.scrollTop = 0;
       this.$.quizzesContent.scrollTop = 0;
-	},
+    },
 
     next: function() {
       this.index++;
@@ -99,6 +122,7 @@
     },
     
     quizDone: function() {
+
       var r = this.quizView.isCorrect();
       if(r) {        
         this.icon = 'social:mood';

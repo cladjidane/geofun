@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"function"
+			],
+			[
 				"inc",
 				"include"
 			],
@@ -123,14 +127,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "ajax-response.json",
-			"settings":
-			{
-				"buffer_size": 1708,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -205,16 +201,65 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/fabien/Sites/labs.koality.fr/geofun"
+		"/Users/fabien/Sites/labs.koality.fr/geofun",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements-libs",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements-libs/simple-slider",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/images",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/images/game",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/polymer-simple-slider-master/examples",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/polymer-simple-slider-master/src",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements/yo-greeting",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements/yo-list",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements-libs",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements-libs/simple-slider",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/scripts",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/styles"
 	],
 	"file_history":
 	[
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements/elements.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements/game-question.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/elements/game-puzzle.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/scripts/app.js",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/B7200C75-2DFA-4225-ACA4-25B541DD44C9/htaccess.txt",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/index.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/quiz-dialog.html",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/9427EA46-F6E6-4D99-89D2-0FCC316F9D98/.htaccess",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/3FC7B512-7EDA-4BEF-9CF0-E73E948FE240/configuration.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/2D990ED5-628F-4811-A85E-6F1742657667/index.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5282C780-C28C-4FF8-8FAC-7931F3D78E53/inc-header.php",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/16AEB2F0-F7F1-4AA3-88E2-5CC1F713BF29/demo-styles.scss",
+		"/Users/fabien/_KOALITY/_CLIENTS/_la-chaumiere/_inte/icomoon/style.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/51DF7F18-8005-41C0-9391-7750B16CF161/demo-styles.css",
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5DC8B5B3-8FD4-443A-A69C-65AFEEEFF4C6/config.rb",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements/page-service.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements/ajax-response.json",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/app.js",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/quiz.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements/quiz-four-quarter.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements/game-puzzle.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/app/styles/main.css",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/_sources/HTML5_Tile_Swapping_Puzzle/puzzle.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/index.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun-0.2/.gitignore",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/styles.css",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements-libs/simple-slider/simpleslider.min.js",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements/quiz-view.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements-libs/simple-slider/simple-slider.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/quiz.css",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/elements/select-one.html",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/ajax-response.json",
+		"/Users/fabien/Sites/labs.koality.fr/geofun/quiz-four-quarter.html",
 		"/private/etc/apache2/httpd.conf",
 		"/private/etc/apache2/extra/httpd-userdir.conf",
 		"/private/etc/php.ini",
 		"/private/etc/apache2/users/fabien.conf",
 		"/Users/fabien/Sites/wp1/wp-content/themes/jupiter/fonts/stylesheet.css",
-		"/private/etc/apache2/extra/httpd-vhosts.conf",
 		"/Users/fabien/Sites/phpmyadmin/config.inc.php",
 		"/Users/fabien/Sites/wp1/wp-config.php",
 		"/Users/fabien/Sites/wp1/wp-content/themes/jupiter/fonts/Arsenal-Bold-demo.html",
@@ -303,44 +348,11 @@
 		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/74073A37-22D4-4C9B-8917-E0F39B21CB39/style.css",
 		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/48129206-6F4D-4432-95E1-DECC57196F68/style.css",
 		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/DD67686B-FA76-44E4-AF5C-4C3931D115D6/MyFontsWebfontsKit.css",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/90FE506E-622D-45BD-8C3F-062D09FB82B0/index.html",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/FA271633-7793-4DC1-9A3A-3229B5295A3C/xhr-single.php",
-		"/Library/LaunchDaemons/com.mysql.mysql.plist",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/E26F8385-EB18-4ECB-81F9-5AF03CF5E2C3/script.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/functions.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/js/main.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/js/plugins.js",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/sidebar.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content-search.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/page.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/index.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/footer.php",
-		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content-single.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/sidebar.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/single.php",
-		"/Applications/XAMPP/xamppfiles/etc/my.cnf",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/content-page.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/comments.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-content/themes/ruffet/archive.php",
-		"/Applications/XAMPP/xamppfiles/htdocs/www.ruffet.fr/wp-settings.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/D959A2A1-BA70-4D00-8F58-0DA3C69C4E8B/home.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/746416AF-9559-4984-9DFA-88391409C643/mk_portfolio.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/99F82BAC-CED3-429A-83E9-7DCB8BF3E407/single-pages_txt_1_col.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/029976C7-7988-4C15-AB2B-8D48EBCD796C/single.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/5D8FB324-A002-4BA1-8CA8-F7B89EB4F4B0/functions.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/2E2D79F1-37F5-4D59-B919-EC0CF5A41C9E/archive.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/D0EACCE0-ED33-4DA3-9648-65C4EA544B41/content.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/7544B4FB-0FC1-4525-90D6-38E367210D9E/content-page.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/82942E79-1F14-43C1-8DD0-B453FF065080/single.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/95498FD8-4C6F-44ED-AB16-65629457EA60/home.php",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/59B96B3B-043F-4820-A115-2FA1D8605145/.htaccess",
-		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/61B2D470-4C61-4CDC-9760-D7A732944455/home.php"
+		"/Users/fabien/Library/Caches/Cleanup At Startup/Transmit/90FE506E-622D-45BD-8C3F-062D09FB82B0/index.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -358,6 +370,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"icon",
+			"quiz",
+			"read",
+			"console",
+			"testChildrenNum",
+			"pol",
+			"77a09b",
 			"max_input_time",
 			"url",
 			"images",
@@ -450,6 +469,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"9ec420",
 			"Impact",
 			" ",
 			"",
@@ -472,104 +492,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "ajax-response.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1708,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								905,
-								905
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -610,7 +540,7 @@
 	"project": "geofun.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":

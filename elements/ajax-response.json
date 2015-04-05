@@ -23,7 +23,18 @@
     "hash" : "etape-2",
     "next"    : true,
     "labelbt": "A la carte",
-    "prev"    : true
+    "prev"    : true,
+    "quiz"  : {
+      "labelbt": "Exemple de jeu",
+      "question"  : "Qui édite GeoFun ?",
+      "type"      : "quiz-four-quarter",
+      "reponses"      : [
+        "Soleil noir" , 
+        "Lunaweb" , 
+        "Koality" 
+      ],
+      "answer" : "2"     
+    }
   },
   {
     "uid": 3,
@@ -36,7 +47,7 @@
     "quiz"  : {
       "labelbt": "Exemple de jeu",
       "question"  : "Qui édite GeoFun ?",
-      "type"      : "four-quarter",
+      "type"      : "quiz-four-quarter",
       "reponses"      : [
         "Soleil noir" , 
         "Lunaweb" , 
@@ -52,7 +63,12 @@
     "hash" : "etape-4",
     "next"    : true,
     "labelbt": "Conclusion",
-    "prev"    : true
+    "prev"    : true,
+    "quiz"  : {
+      "labelbt": "Puzzle",
+      "question"  : "Résoudre le puzzle",
+      "type"      : "game-puzzle"
+    }
   },
   {
     "uid": 5,

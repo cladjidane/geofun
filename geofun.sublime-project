@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/fabien/Sites/labs.koality.fr/geofun-0.2"
 		}
 	]
 }

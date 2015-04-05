@@ -66,6 +66,9 @@
     created: function() {
       this.pages = [];
     },
+    ready: function() {
+      //console.log('test');
+    },
     pagesLoaded: function() {
       // Make a copy of the loaded data
       this.pages = this.$.ajax.response.slice(0);

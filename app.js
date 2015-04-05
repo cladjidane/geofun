@@ -10,6 +10,12 @@
   template.addEventListener('template-bound', function(e) {
     this.route = this.route || DEFAULT_ROUTE;
   });
+
+  /* DEBUG 
+  template.ready = function(){
+    console.log('page-dialog ready');
+  };
+  */
   
   template.nextStep = function(e, detail, sender) {
     var pages = document.querySelector('#pages');

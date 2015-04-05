@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/core-selector/core-selector.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 
-<polymer-element name="quiz-four-quarter" extends="quiz-base" noscript relative>
+<polymer-element name="quiz-four-quarter" extends="quiz-base" relative>
 <template>
 
   <style>
@@ -82,4 +82,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <core-selector target="{{$.choices}}" selected="{{value}}"></core-selector>
   
 </template>
+<script>
+  Polymer({
+    ready: function() {
+        //this.initialize();
+    }
+  })
+</script>
 </polymer-element>

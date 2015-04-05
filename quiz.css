@@ -11,6 +11,16 @@ core-icon.check-button {
   transform-origin: 50% 50%;
 }
 
+::shadow paper-dialog {
+  border: 10px solid blue;
+  background: yellow;
+}
+
+quiz-dialog {
+  display: block;
+  border: 1px solid red;
+}
+
 :host([animate]) core-icon {
   visibility: hidden;
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<style type="text/css">
+		#screen { 
+		  width: 500px;
+		  height: 400px;
+		  background: red;
+		}
+
+		#el {  
+		  width: 180px;
+		  height: 100px;
+		  background: blue;
+		  border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+<div id="screen">
+  
+  <div id="el"></div>
+  
+</div>
+
+<script type="text/javascript">
+	
+	function t (parent, children) {
+		var parent = document.getElementById(parent);
+		var children = document.getElementById(children);
+
+		console.log(parent);
+		
+		var ratio = [parent.offsetWidth / children.offsetWidth, parent.offsetHeight / children.offsetHeight ];
+		ratio = Math.min(ratio[0], ratio[1]);
+		return { width:children.offsetWidth*ratio, height:children.offsetWidth*ratio };
+	}
+
+	var x = t('screen', 'el');
+
+	var el = document.getElementById('el');
+	el.style.height = x.height + 'px';
+	el.style.width = x.width + 'px';
+
+
+	console.log(el.style);
+
+</script>
+
+</body>
+</html>
