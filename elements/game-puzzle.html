@@ -146,8 +146,9 @@ var options = {
                 yPos += this._pieceHeight;
             }
         }
+        this.addEventListener("touchstart", this.onPuzzleClick, false);
+        //this.onmousedown  = this.onPuzzleClick;
 
-        this.onmousedown  = this.onPuzzleClick;
     },
 
     onPuzzleClick : function (e){       
@@ -167,8 +168,10 @@ var options = {
             this._stage.drawImage(this._img2, this._currentPiece.sx, this._currentPiece.sy, this._pieceWidth, this._pieceHeight, this._mouse.x - (this._pieceWidth / 2), this._mouse.y - (this._pieceHeight / 2), this._pieceWidth, this._pieceHeight);
             this._stage.restore();
             
-            this.onmousemove = this.updatePuzzle;
-            this.onmouseup = this.pieceDropped;
+            this.addEventListener("touchmove", this.updatePuzzle, false);
+            this.addEventListener("touchmove", this.pieceDropped, false);
+            //this.onmousemove = this.updatePuzzle;
+            //this.onmouseup = this.pieceDropped;
         }
     },
 
